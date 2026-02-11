@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - GrayCON</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dashboard-body">
+
+    <aside class="sidebar">
+        <div class="logo">GrayCON</div>
+        <ul class="side-nav">
+            <li><a href="#" class="active">Overview</a></li>
+            <li><a href="transfer.html">Send Money</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="index.html" class="logout-btn">Logout</a></li>
+        </ul>
+    </aside>
+
+    <main class="dashboard-content">
+        
+        <header class="dash-header">
+            <h2>Welcome, Ashok</h2>
+            <button class="btn-primary" onclick="alert('Transfer Feature Coming Soon!')">+ New Transfer</button>
+        </header>
+
+        <section class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Sent</h3>
+                <p class="amount">$12,450.00</p>
+            </div>
+            <div class="stat-card">
+                <h3>Pending</h3>
+                <p class="amount text-orange">$0.00</p>
+            </div>
+            <div class="stat-card">
+                <h3>Completed</h3>
+                <p class="amount text-green">14 Transfers</p>
+            </div>
+        </section>
+
+        <section class="recent-transactions">
+            <h3>Recent Activity</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Receiver</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#TXN-8821</td>
+                        <td>Amitesh Kumar</td>
+                        <td>$500.00</td>
+                        <td><span class="status-badge success">Completed</span></td>
+                        <td>Feb 10, 2026</td>
+                    </tr>
+                    <tr>
+                        <td>#TXN-8822</td>
+                        <td>Pranav Singh</td>
+                        <td>$1,200.00</td>
+                        <td><span class="status-badge pending">Processing</span></td>
+                        <td>Feb 11, 2026</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
