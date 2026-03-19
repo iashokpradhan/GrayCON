@@ -1,50 +1,37 @@
-# 🚀 GrayCON – Crypto Settlement Network
+GrayCON is a blockchain-based remittance system that enables fast and low-cost international fiat-to-fiat transfers. The sender deposits money via bank or card, which is instantly converted into crypto/stablecoin (on-ramp) and transferred over the blockchain. On the receiver side (off-ramp), it is converted back into local fiat and sent to their bank account (e.g., via UPI). The entire process is secure, transparent, and seamless, while users interact only with fiat currency.
 
-GrayCON is a blockchain-based international remittance platform that enables **fast, secure, and low-cost cross-border transfers**.
+Flow Diagram
 
----
+(Fiat Sender → Fiat Receiver using GrayCON) Peer1 (Sender - Fiat User Abroad)
 
-## 🌍 Overview
+↓
 
-Traditional banking systems are slow, expensive, and inefficient.
+Fiat Deposit via On-Ramp Partner (e.g., MoonPay) (Bank Transfer / Card Payment)
 
-GrayCON solves this by:
-- ⚡ Instant settlement using blockchain
-- 💸 Low transaction fees
-- 🔐 Secure decentralized architecture
+Fiat Successfully Received.
 
----
+↓
 
-## 🧠 How It Works
+Fiat → Crypto/Stablecoin Conversion (ex. USDT) (via Liquidity Pool / Exchange Partner).
 
-1. User deposits fiat (INR, USD, etc.)
-2. System converts it into crypto/stablecoin
-3. Transaction is processed on blockchain
-4. Receiver gets converted fiat in local currency
+↓
 
----
+Blockchain Transaction Executed (Transaction Hash Generated & Stored). Stablecoin Transferred Internally on Blockchain.
 
-## 🛠️ Tech Stack
+↓
 
-### Frontend
-- HTML
-- CSS (Glassmorphism UI)
-- JavaScript
+Off-Ramp Partner (e.g., Unocoin) (Crypto/ Stablecoin → INR Conversion).
 
-### Backend
-- Node.js
-- Express.js
-- MongoDB (Local / Atlas)
+↓
 
----
+INR Sent via UPI / Bank Transfer.
 
-## ✨ Features
+↓
 
-- 🔐 User Authentication (Signup/Login)
-- 📊 Dashboard UI
-- ⚡ Real-time crypto settlement concept
-- 💻 Clean UI inspired by modern fintech apps
+Peer2 (Receiver - Fiat User in India).
 
----
+Cross-border money transfers using traditional banking and remittance services often involve high transaction fees, delayed settlement times, limited transparency, and concerns around data privacy. These issues particularly affect migrant workers, students, freelancers, and small businesses who rely on frequent international transfers. GrayCON proposes a blockchain-based remittance platform that explores the use of crypto or stablecoin infrastructure as an intermediary layer for international fiat-to-fiat transfers. The system is intended to simplify cross-border remittance by enabling faster settlement, potentially lower costs, and improved confidentiality, while allowing end users to interact only with fiat currency through familiar banking or payment interfaces.
 
-## 📁 Project Structure
+Accronyms –
+
+CON – Crypto Oriented Network. Fiat – A government currency ex. INR, USD. On Ramp – Peer1 Fiat to Crypto from bank Off Ramp – Peer2 Crypto to Fiat in ban
